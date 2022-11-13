@@ -8,18 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject private var viewModel = ViewModel()
     var body: some View {
         NavigationView {
-            ScrollView{
-                VStack{
-                    Text("Jhoan")
-                }
-                .toolbar {
-                    toolbarView()
+            VStack(spacing: 0) {
+                Divider()
+                    .overlay(
+                        Color("primary")
+                            .frame(height: 1)
+                            .opacity(0.4)
+                    )
+                ScrollView{
+                    VStack{
+                        storyList
+                    }
+                    .toolbar {
+                        toolbarView()
+                    }
                 }
             }
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
+    var storyList: some View{
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack{
+                ForEach(viewModel.storyList){ story in
+                    StoryView(story: story)
+                }
+            }
+            .padding(.leading, 20)
+            .padding(.vertical, 8)
+        }
+    }
+    
     @ToolbarContentBuilder
     func toolbarView() -> some ToolbarContent{
         ToolbarItem(placement: .navigationBarLeading) {
