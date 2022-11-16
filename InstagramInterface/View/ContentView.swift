@@ -21,6 +21,15 @@ struct ContentView: View {
                 ScrollView{
                     VStack{
                         storyList
+                        Divider()
+                            .overlay(
+                                Color("primary")
+                                    .frame(height: 1)
+                                    .opacity(0.4)
+                            )
+                        ForEach(viewModel.timelineList){ timeline in
+                            TimeLineView(timeLine: timeline)
+                        }
                     }
                     .toolbar {
                         toolbarView()
@@ -47,18 +56,26 @@ struct ContentView: View {
         ToolbarItem(placement: .navigationBarLeading) {
             Button(action: {}) {
                 Image("camera-Icon")
+                    .renderingMode(.template)
+                    .foregroundColor(Color("primary"))
             }
         }
         ToolbarItem(placement: .principal) {
             Image("instagram-logo")
+                .renderingMode(.template)
+                .foregroundColor(Color("primary"))
         }
         ToolbarItem(placement: .navigationBarTrailing) {
             HStack{
                 Button(action: {}) {
                     Image("igtv")
+                        .renderingMode(.template)
+                        .foregroundColor(Color("primary"))
                 }
                 Button(action: {}) {
                     Image("messanger")
+                        .renderingMode(.template)
+                        .foregroundColor(Color("primary"))
                 }
             }
         }
@@ -68,5 +85,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
     }
 }

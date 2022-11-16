@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88033EEB29246708009BAD8E /* TimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88033EEA29246708009BAD8E /* TimeLineView.swift */; };
 		880DA6AA29206AD600D4EF4E /* InstagramInterfaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880DA6A929206AD600D4EF4E /* InstagramInterfaceApp.swift */; };
 		880DA6AC29206AD600D4EF4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880DA6AB29206AD600D4EF4E /* ContentView.swift */; };
 		880DA6AE29206ADB00D4EF4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 880DA6AD29206ADB00D4EF4E /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		88033EEA29246708009BAD8E /* TimeLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineView.swift; sourceTree = "<group>"; };
 		880DA6A629206AD600D4EF4E /* InstagramInterface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramInterface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		880DA6A929206AD600D4EF4E /* InstagramInterfaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramInterfaceApp.swift; sourceTree = "<group>"; };
 		880DA6AB29206AD600D4EF4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				880DA6AB29206AD600D4EF4E /* ContentView.swift */,
+				88033EEA29246708009BAD8E /* TimeLineView.swift */,
 				880DA6BE292080B800D4EF4E /* StoryView.swift */,
 			);
 			path = View;
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				880DA6BF292080B800D4EF4E /* StoryView.swift in Sources */,
+				88033EEB29246708009BAD8E /* TimeLineView.swift in Sources */,
 				880DA6AC29206AD600D4EF4E /* ContentView.swift in Sources */,
 				880DA6B929206DBD00D4EF4E /* UserModel.swift in Sources */,
 				880DA6BC292073B100D4EF4E /* ViewModel.swift in Sources */,
