@@ -15,6 +15,7 @@
 		880DA6B929206DBD00D4EF4E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880DA6B829206DBD00D4EF4E /* UserModel.swift */; };
 		880DA6BC292073B100D4EF4E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880DA6BB292073B100D4EF4E /* ViewModel.swift */; };
 		880DA6BF292080B800D4EF4E /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880DA6BE292080B800D4EF4E /* StoryView.swift */; };
+		888BD1E32925D285009BBC70 /* TabViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888BD1E22925D285009BBC70 /* TabViewCustom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		880DA6B829206DBD00D4EF4E /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		880DA6BB292073B100D4EF4E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		880DA6BE292080B800D4EF4E /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		888BD1E22925D285009BBC70 /* TabViewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewCustom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				880DA6AB29206AD600D4EF4E /* ContentView.swift */,
+				888BD1E22925D285009BBC70 /* TabViewCustom.swift */,
 				88033EEA29246708009BAD8E /* TimeLineView.swift */,
 				880DA6BE292080B800D4EF4E /* StoryView.swift */,
 			);
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				880DA6BF292080B800D4EF4E /* StoryView.swift in Sources */,
+				888BD1E32925D285009BBC70 /* TabViewCustom.swift in Sources */,
 				88033EEB29246708009BAD8E /* TimeLineView.swift in Sources */,
 				880DA6AC29206AD600D4EF4E /* ContentView.swift in Sources */,
 				880DA6B929206DBD00D4EF4E /* UserModel.swift in Sources */,
