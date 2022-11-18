@@ -17,7 +17,7 @@ enum TabViewIcons: String, CaseIterable{
 
 struct TabViewCustom: View {
     @State private var selectedTab: TabViewIcons = .home
-    
+    let insets = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first(where: {$0.isKeyWindow})?.safeAreaInsets ?? .zero
     var icons: [TabViewIcons] = {
         var icon = TabViewIcons.allCases
         icon.removeLast()
@@ -80,6 +80,7 @@ struct TabViewCustom: View {
                 }
                 .padding(.top, 10)
                 .padding(.horizontal, 26)
+                .padding(.bottom, insets.bottom == 0 ? 10 : 0) //Para dispositivos que no tengan safeArea se agrega un padding inferior de 10
                 .background(Color("tabBar-bg"))
             .frame(maxWidth: .infinity, alignment: .center)
             }
@@ -90,5 +91,6 @@ struct TabViewCustom: View {
 struct TabViewCustom_Previews: PreviewProvider {
     static var previews: some View {
         TabViewCustom()
+            .preferredColorScheme(.dark)
     }
 }
