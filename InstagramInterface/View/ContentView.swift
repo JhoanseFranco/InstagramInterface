@@ -56,7 +56,7 @@ struct ContentView: View {
                     StoryView(story: story)
                 }
             }
-            .padding(.leading, 20)
+            .padding(.leading, 10)
             .padding(.vertical, 8)
         }
     }
